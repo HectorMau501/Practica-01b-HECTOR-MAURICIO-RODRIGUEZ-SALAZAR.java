@@ -1,48 +1,57 @@
 
 package POO;
 
-
+//Clase padre
 public class Tren extends Transporte
 {
-    private String modelo;
-    private String tipoCarga;
+    //Atributos
+    private double peso;
     private float velocidad;
+    private String modelo;
 
-    public Tren(String modelo, String tipoCarga, float velocidad, float altura, String color, float gastoGasolina) {
-        super(altura, color, gastoGasolina);
+    //Metodo contructor vacio
+    public Tren(){}
+    
+    
+    Transporte trans1 = new Transporte();
+
+    public Tren(double peso, float velocidad, String modelo)
+    {
+        this.peso = peso;
+        this.velocidad = velocidad;
         this.modelo = modelo;
-        this.tipoCarga = tipoCarga;
+    }
+ 
+    
+    //Metodos setter y getters de la clase hija
+
+    public void setPeso(double peso) 
+    {
+        this.peso = peso;
+    }
+
+    public double getPeso() 
+    {
+        return peso;
+    }
+
+   
+    public void setVelocidad(float velocidad) 
+    {
         this.velocidad = velocidad;
     }
+    public float getVelocidad()
+    {
+        return velocidad;
+    } 
 
-    public void setModelo(String modelo) {
-    this.modelo = modelo;
-    }
-    
     public String getModelo() {
         return modelo;
     }
 
-    public void setTipoCarga(String tipoCarga) 
-    {
-        this.tipoCarga = tipoCarga;
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
-
-    public String getTipoCarga() {
-        return tipoCarga;
-    }
-
-   
-    public void setVelocidad(float velocidad) {
-        this.velocidad = velocidad;
-    }
-    public float getVelocidad() {
-        return velocidad;
-    }
-
-    
-    
-    
     
     
     

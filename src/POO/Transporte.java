@@ -1,19 +1,18 @@
 
 package POO;
 
-
+//Clase padre
 public class Transporte
 {
+    //Atributos
     private float altura;
     private String color;
-    private float gastoGasolina;
+    private double gastoGasolina;
 
-    public Transporte(float altura, String color, float gastoGasolina) {
-        this.altura = altura;
-        this.color = color;
-        this.gastoGasolina = gastoGasolina;
-    }
-
+    //Metodo constructor
+    public Transporte() {}
+    
+    //Metodos Setters y Getters
     public void setAltura(float altura) 
     {
         this.altura = altura;
@@ -34,12 +33,12 @@ public class Transporte
         return color;
     }
 
-    public void setGastoGasolina(float gastoGasolina) 
+    public void setGastoGasolina(double gastoGasolina) 
     {
         this.gastoGasolina = gastoGasolina;
     }
 
-    public float getGastoGasolina() 
+    public double getGastoGasolina() 
     {
         return gastoGasolina;
     }
